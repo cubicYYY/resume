@@ -1,6 +1,7 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+\usepackage{hyperref}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
@@ -20,39 +21,31 @@
 
 \section{\faUsers\ Experience}
 \datedsubsection{\textbf{Shanghai Luogu Network Technology Co., Ltd} Shanghai, China}{2021 -- 2022}
-\role{Intern}{Backend Development / DevOps / Teaching}
+\role{Internship}{Backend Development / DevOps / Teaching}
 A website providing related services of code online judging for students engaged in Olympiad in Informatics. \\
-Currently(--2023.8) active users > 100k \\
-URL: https://www.luogu.com.cn/
+\textbf{Currently(--2023.8) active users > 100K} \\
+URL: \href{https://www.luogu.com.cn/}{https://www.luogu.com.cn/}
 \begin{itemize}
   \item Online judger security \& performance optimization
   \item Instructed certain algorithm online courses (main speaker / teacher assistant)
   \item Anti-cheat: (system optimization \& community order maintenance)
 \end{itemize}
 
-\datedsubsection{\textbf{CubicYYY/ZJUCrawler}}{2023 -- Present}
-\role{Python}{Individual Project}
-An easy-to-use crawler for ZJU students to fetch personal infos.  
+\datedsubsection{\textbf{Reputation System (Game Framework)}}{2022 -- 2023}
+\role{Vue.js, Python}{Backend / Frontend (team)}
+Entrusted by Dongbei University of Finance and Economics(DUFE). \\
+The purpose is to construct an easy-to-use game framework. It involves participants interacting between multiple timed rounds of the game, and attempting to obtain the highest bonus under certain rules and information blindness. \\
+Used for psychological research.
 \begin{itemize}
-  \item Extensible
-  \item High robustness, high tolerance of website page structure changes
-\end{itemize}
-
-\datedsubsection{\textbf{CubicYYY/toy-serde}}{2023 -- Present}
-\role{C++}{Individual Project}
-A simple modern C++ library to serialize multiple types of data. The design of the interface is inspired by Boost library.
-Support (de)serialization to/from a binart/XML file.
-\begin{itemize}
-  \item Easy to use for custom data classes
-  \item More clear template type constraints with C++ Concepts feature
-  \item Avoid copy/move constructor in most cases
-  \item Template meta programming
+  \item Python framework: oTree
+  \item Using livepage to get a more consistent user experience
 \end{itemize}
 
 \datedsubsection{\textbf{CubicYYY/LC3-Ex}}{2022 -- Present}
-\role{JavaScript}{Individual Project}
-A webpage transpiler/assembler to add more utilities to LC3 ISA.
-This ISA is used for education purposes, including the international course "Introduction to Computer Science" in ZJU, as a cooperation with University Texas, United States.
+\role{JavaScript, HTML}{Individual Project}
+A webpage transpiler/assembler to add more utilities(i.e. extended instructions) to LC3 assembly. \\
+LC3 ISA is used for education purposes, first introduced in \textit{Introduction to Computing Systems: From Bits \& Gates to C/C++ \& Beyond} 
+by Yale N. Patt from The University of Texas at Austin.
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -63,10 +56,11 @@ This ISA is used for education purposes, including the international course "Int
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item >10K lines: C++ > C > Python > PHP
-  \item 1K-10K lines: JavaScript(Native, Node.js) > HTML > Rust > MATLAB > Java
+  \item >10K lines: C++ > C > Python
+  \item 5K-10K lines: JavaScript(Native, Node.js) > PHP
+  \item 1K-5K lines: HTML > Rust > MATLAB > Java
   \item <1K lines: Shell
-  \item Others: MySQL, SQLite, Vue.js, Redis, Qt(C++)
+  \item Others: SQL, Vue.js, Redis
 \end{itemize}
 
 \section{\faHeartO\ Honors and Awards}
@@ -76,11 +70,8 @@ This ISA is used for education purposes, including the international course "Int
 \datedline{\textit{\nth{4} Prize}, QWBCTF 2022 Quals (team AAA)}{Sept. 2022}
 \datedline{\textit{\nth{1} Prize}, 5space 2022 Quals (team AAA)}{Sept. 2022}
 \datedline{\textit{\nth{1} Prize(Mainland China)}, \textit{\nth{9} Prize(Global)}, TCTF RisingStar 2022 Quals (team AAA)}{Sept. 2022}
-\datedline{\textit{\nth{6} Prize}, SUSCTF 2022 (team AAA)}{Feb. 2022}
 \datedline{\textit{\nth{2} Prize}, TQLCTF 2022 Quals (team AAA)}{Feb. 2022}
-\datedline{\textit{\nth{13} Prize}, hxp CTF 2021 (team Katzebin)}{Dec. 2021}
 \datedline{\textit{\nth{3} Prize}, ByteCTF 2021 Final (team AAA)}{Dec. 2021}
-\datedline{\textit{\nth{6} Prize}, N1CTF 2021 (team AAA)}{Nov. 2021}
 
 \section{\faInfo\ Miscellaneous}
 \begin{description}[parsep=0.5ex]
@@ -88,7 +79,7 @@ This ISA is used for education purposes, including the international course "Int
   \item[GitHub] https://github.com/CubicYYY
   \item[Languages] English - Fluent, Japanese - Beginner, Mandarin - Native speaker
   \item[Team] ZJU CTF team AAA, web/misc; ZJU XLab, frontend/DevOps
-  \item[Other] Provide problems for ACTF2022, highly praised by CTF team at the University of British Columbia: http://web.archive.org/web/20221207041911/https://maplebacon.org/2022/06/actf-ffsk/
+  \item[Other] Provide problems for ACTF2022, highly praised by CTF team at the University of British Columbia: \href{http://web.archive.org/web/20221207041911/https://maplebacon.org/2022/06/actf-ffsk/}{http://web.archive.org/web/20221207041911/https://maplebacon.org/2022/06/actf-ffsk/}
 \end{description}
 
 %% Reference
