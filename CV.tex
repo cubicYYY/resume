@@ -1,0 +1,139 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{hyperref}
+\usepackage[UTF8]{ctex}
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{YaoYang Ye}
+
+\basicInfo{
+  \email{makise@zju.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 182-5882-5609} \textperiodcentered\ 
+  \github[CubicYYY]{https://github.com/CubicYYY}
+  \homepage[Personal Blog]{https://cubicy.icu}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Zhejiang University (ZJU)}, Hangzhou, Zhejiang, China}{2021 -- Present}
+\role{Undergraduate}{College of Computer Science and Technology}
+\begin{itemize}
+  \item Expected to graduate in \textbf{June 2025}.
+  \item Grades of Recent 2 Years: \textbf{91.45/100}
+  \item Overall GPA: \textbf{3.91/4.0 (89.41/100)}
+  \item Ranked \textbf{20} out of ~160 students.
+\end{itemize}
+\subsection{Selected Courses and Scores}
+\begin{itemize}
+  \item Integrate Practice for Courses I (Security Attack and Defense Practice): 100/100
+  \item Wireless Network Application: 100/100
+  \item Browser/Server Arch. Software Design: 98/100
+  \item Java Application Design: 97/100
+  \item Digital Logic Design: 96/100
+  \item Operating System: 95/100
+  \item Computer Architecture: 93/100
+  \item Compiler Principle: 93/100
+  \item Database System: 92/100
+  \item Principles of Programming Languages: 92/100
+\end{itemize}
+
+\datedsubsection{\textbf{The University of Tokyo}, Tokyo, Japan}{Scheduled: 2024.10 -- 2025.3}
+\role{Exchange Student}{Participating in the USTEP Exchange Program}
+Will return to home university (ZJU) upon completion of the exchange program.
+
+\section{\faLightbulbO\ Research Interests}
+Be broadly interested in:
+\subsection{Cyber Security}
+\begin{itemize}
+  \item \textbf{Automated Vulnerability Detection:} Techniques such as pointer analysis and fuzzing techniques to identify flaws in software applications.
+  \item \textbf{Web Application Security:} Addressing security concerns on both server-side and client-side.
+  \item \textbf{Blockchain Security:} Ensuring the integrity and security of smart contracts and decentralized applications (DApps).
+\end{itemize}
+
+\subsection{Programming Language}
+\begin{itemize}
+  \item \textbf{Type Systems:} Enhancing program safety, performance, and expressiveness through robust type systems, thereby reducing the cognitive load on developers.
+  \item \textbf{Formal Methods for Safety Assurance:} Utilizing scalable formal methods to rigorously prove the safety and correctness of critical software applications.
+  \item \textbf{Concurrency and Parallelism:} Ensuring concurrency safety and facilitating automatic parallelism to optimize performance.
+  \item \textbf{Optimization Techniques:} Implementing program and compiler optimization strategies to improve efficiency and reduce resource usage.
+\end{itemize}
+
+\subsection{Software Development Engineering}
+\begin{itemize}
+  \item \textbf{High-Performance Web Applications:} Developing web applications that can handle high levels of concurrency and performance demands efficiently.
+\end{itemize}
+
+\section{\faUsers\ Internships}
+\datedsubsection{\textbf{Shanghai Luogu Network Technology Co., Ltd} Shanghai, China}{2021 -- 2022}
+\role{Internship}{Backend Development / DevOps / Education}
+Luogu is a platform offering online code judging services, primarily serving students participating in the Olympiad in Informatics.
+URL: \href{https://www.luogu.com.cn/}{https://www.luogu.com.cn/}
+\textbf{Currently(--2024.7) active users > 100K} \\
+\begin{itemize}
+  \item Enhanced the security and performance of the online judging system.
+  \item Conducted and assisted in teaching algorithm courses, serving as both a main speaker and teacher assistant.
+\end{itemize}
+
+\section{\faBookmarkO\ Publications}
+\testbf{Submitted to Automated Software Engineering (ASE'24)} \nth{3} author, Understanding Industry Perspectives of Static Application Security Testing (SAST) Evaluation
+
+\section{\faSearch\ Research Experiences}
+\datedsubsection{\textbf{Static Value-Flow Analysis Framework Optimizations}}{2024.6 - present}
+Supervised by Prof. Peisen Yao, Zhejiang University.\\
+Background: Some tools in the framework (SVF) haevily relies on set operations (union, join, etc.) to perform the analysis over LLVM sparse bit vectors, comsuming a large amount of resources.
+\begin{itemize}
+  \item Measure memory and time cost of the Whole Program Analysis (WPA) tool over a selected set of programs with various scales, to set a criteria.
+  \item Boost set operations by adding vectorization and utilizing the information of vectors' sparsity.
+\end{itemize}
+
+\datedsubsection{\textbf{Java Static Application Security Testing Benchmarks}}{2023.12 - 2024.6}
+Supervised by Prof. Peisen Yao, Zhejiang University.\\
+Background: Static analysis tools are increasingly adopted by organizations. However, existing benchmarks fall short of meeting practitioners' needs to evaluate the quality of these tools. This situation resulted in impediments to the utilization and development of relevant tools.
+\begin{itemize}
+  \item Collect and analyze GitHub issues of various static analysis tools to identify the main obstacles in their application and the major concerns of practitioners.
+  \item Measure the code coverage of static analysis tools over a testing corpus to estimate the validity of the corpus.
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\subsection{Programming}
+\begin{itemize}[parsep=0.5ex]
+  \item >15k lines: C++
+  \item >10k lines: Python, Rust
+  \item 5k-10k lines: JavaScript(Native, Node.js) > PHP > MATLAB > Java
+  \item <5k lines: React.js, Vue.js
+\end{itemize}
+\subsection{Language}
+\begin{itemize}[parsep=0.5ex]
+  \item Mandarin: native speaker
+  \item English: TOEFL 100 (R27 L26 S23 W24); CET6 598
+  \item Japanese: basic, capable for daily communications
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\subsection{Scholarships}
+\datedline{\textit{\nth{3} Prize} for Excellent Student, Zhejiang University}{2022}
+\datedline{\textit{\nth{2} Prize} for Excellent Student, Zhejiang University}{2023}
+
+\subsection{CTF(Capture The Flag) Competetions}
+\datedline{\textit{\nth{2} Prize}, CODEGATE CTF 2023, Seoul, Korea (team AAA)}{Aug. 2023}
+\datedline{\textit{\nth{1} Prize}, 5space 2022 Quals (team AAA)}{Sept. 2022}
+\datedline{\textit{\nth{1} Prize(Mainland China)}, \textit{\nth{9} Prize(Global)}, TCTF RisingStar 2022 Quals (team AAA)}{Sept. 2022}
+\datedline{\textit{\nth{2} Prize}, TQLCTF 2022 Quals (team AAA)}{Feb. 2022}
+\datedline{\textit{\nth{3} Prize}, ByteCTF 2021 (team AAA)}{Dec. 2021}
+
+\section{\faInfo\ Miscellaneous}
+\begin{description}[parsep=0.5ex]
+  \item[Blog] http://cubicy.icu
+  \item[GitHub] https://github.com/CubicYYY
+  \item[Team] ZJU CTF team AAA, web/misc; ZJU XLab, frontend/DevOps
+  \item[Other] Provide challenges for ACTF2022, highly praised by CTF team at the University of British Columbia: \href{http://web.archive.org/web/20221207041911/https://maplebacon.org/2022/06/actf-ffsk/}{http://web.archive.org/web/20221207041911/https://maplebacon.org/2022/06/actf-ffsk/}
+\end{description}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
