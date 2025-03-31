@@ -1,0 +1,100 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+\usepackage{hyperref}
+\usepackage[UTF8]{ctex}
+
+\begin{document}
+
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{叶耀阳}
+
+\basicInfo{
+  \email{y@cubicy.icu} \textperiodcentered\
+  \phone{(+86) 182-5882-5609} \textperiodcentered\
+  \github[CubicYYY]{https://github.com/CubicYYY}
+  \homepage[Blog: cubicy.icu]{https://cubicy.icu}}
+
+\section{\faGraduationCap\ 教育经历}
+
+\datedsubsection{\textbf{浙江大学}}{2021.9 - 2025.6（预计）}
+\textit{本科, 计算机科学与技术}
+\begin{itemize}
+  \item GPA: 3.91/4.0
+  \item Junior year GPA: \textbf{3.95/4.0 (91.37/100)}
+  \item 主要课程：高级数据结构与算法分析、计算机组成、博弈论、概率论与数理统计、编程语言原理
+  \item 校级荣誉：浙江大学二等奖学金（2022, 2023），浙江大学三等奖学金（2021）
+\end{itemize}
+
+\datedsubsection{\textbf{东京大学（The University of Tokyo）}}{2024.9 - 2025.3}
+\textit{校级交换项目（USTEP）}
+经学业考察、面试、校方推荐，赴日本东京参与的交换留学项目。为期约 6 个月。
+
+\section{\faCogs\ 工作经历}
+
+\datedsubsection{\textbf{Humanify AI}}{2025.1 至今}
+\role{远程实习}{系统开发}
+\begin{itemize}
+  \item 基于 AOSP 定制 AI 原生系统，服务于大模型在用户设备上的高效推理
+  \item 基于 ZeroMQ 设计组件, 加速进程间通信
+  \item 使用 Rust 实现内核驱动等高可靠系统组件
+\end{itemize}
+
+\datedsubsection{\textbf{上海洛谷网络科技有限公司}}{2021 - 2022}
+\role{远程实习}{后端开发/讲师}
+国内最大级的信息学竞赛在线代码评测网站，目前（至 2025.3）月活跃用户逾 10 万人。
+网址: \href{https://www.luogu.com.cn/}{https://www.luogu.com.cn/}
+\begin{itemize}
+  \item 通过修改弹性扩容策略，优化动态负载下的在线代码运行性能
+  \item 担任部分算法竞赛课程主讲
+\end{itemize}
+
+\datedsubsection{\textbf{浙江大学启真交叉学科创新创业实验室（X-Lab）}}{2022.7 至今}
+\role{成员}{全栈开发}
+\begin{itemize}
+  \item 与浙江大学历史学院合作，作为技术团队负责人，开发清代科举人物数据库与配套网站
+  \item 不定期进行技术分享、教学
+\end{itemize}
+
+\datedsubsection{\textbf{浙江大学 Azure Assassin Alliance (AAA) 战队}}{2021 至今}
+\role{成员}{Web / Misc}
+\begin{itemize}
+  \item 作为成员每年参与国内外夺旗赛（CTF），近期获得荣誉包括 SECCON 2023 团队亚军（全球）
+  \item 作为讲师，负责浙江大学暑学期网络攻防实践课程（2022, 2023）Web 方向部分内容
+\end{itemize}
+
+\section{\faCogs\ 项目}
+
+\datedsubsection{\textbf{与 Jingbo Wang 教授（Purdue 大学）的合作研究}}{2022.7 至今}
+\role{学术}{远程研究助手}
+\begin{itemize}
+  \item 通过 LLM 组件加速程序综合（Program Synthesis）
+  \item 使用 XGrammar 组件加速语法树生成、搜索，使得符合约束的代码片段更早被找到
+\end{itemize}
+
+\datedsubsection{\textbf{策略生成与回测框架}}{2022.7 至今}
+\role{个人项目}{Python}
+\begin{itemize}
+  \item 通过领域特定语言（DSL）定义策略，允许对带参策略的参数取值进行搜索、调优
+  \item 目前尝试使用 XGrammar 根据 DSL 语法自动生成策略
+  \item 近期目标：实现策略生成-调优-回测的全自动闭环
+\end{itemize}
+
+\section{\faCogs\ 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言：C++（>15k 行）, Rust（>10k 行）, Python（>10k 行）, JavaScript, PHP, MATLAB, Shell, SQL, Haskell
+  \item 语言能力：英语 - TOEFL 100, CET6 598; 日语 - 中等（日常交流）
+\end{itemize}
+
+\section{\faInfo\ 其他}
+\begin{description}[parsep=0.5ex]
+  \item[个人博客] http://cubicy.icu
+  \item[GitHub] https://github.com/CubicYYY
+  \item[升学] 已获得 Purdue University 的 PhD offer（人工智能，编程语言理论和信息安全交叉方向）
+  \item[论文] 目前尚有一篇论文在投
+\end{description}
+
+\end{document}
+
