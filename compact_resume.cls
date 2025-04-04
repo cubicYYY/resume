@@ -13,7 +13,7 @@
 \RequirePackage{url}
 \urlstyle{tt}
 \RequirePackage{fontawesome}
-%\RequirePackage[usenames,dvipsnames]{xcolor}
+%
 \RequirePackage{fontspec}
 
 \setmainfont[
@@ -37,9 +37,9 @@
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
-\setlist{noitemsep}
-\setlist[itemize]{topsep=0.15em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.15em, leftmargin=1.5pc}
+\setlist{noitemsep, topsep=0em, partopsep=0em}
+\setlist[itemize]{topsep=0em, partopsep=0em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0em, partopsep=0em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}
@@ -95,6 +95,6 @@
 }
 
 \newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
-  \vspace{0.5ex}
+  {\par \small\textit{#1} ~ #2 \par}
+  \vspace{0.4ex}
 }
