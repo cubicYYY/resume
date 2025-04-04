@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
-\LoadClass[10pt]{article}
+\LoadClass[9pt]{article}
 
-\linespread{0.95}
+\linespread{0.85}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.25em}
+\setlength{\parskip}{0.15em}
 
 \RequirePackage{xltxtra}
 \RequirePackage{xifthen}
@@ -30,27 +30,27 @@
   a4paper,
   left=0.6in,
   right=0.6in,
-  top=0.5in,
-  bottom=0.45in,
+  top=0.3in,
+  bottom=0.3in,
   nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \setlist{noitemsep}
-\setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+\setlist[itemize]{topsep=0.15em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0.15em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}
-  {\large\scshape\raggedright}
+  {\normalsize\scshape\raggedright}
   {}{0em}{}[\titlerule]
-\titlespacing*{\section}{0cm}{*1.0}{*1.0}
+\titlespacing*{\section}{0cm}{*0.8}{*0.8}
 
 \titleformat{\subsection}
-  {\normalsize\raggedright}
+  {\small\raggedright}
   {}{0em}{}
-\titlespacing*{\subsection}{0cm}{*1.0}{*0.5}
+\titlespacing*{\subsection}{0cm}{*0.8}{*0.4}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
@@ -63,11 +63,11 @@
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
-  \vspace{1.25ex}
+  \centerline{\LARGE\scshape{#1}}
+  \vspace{1.0ex}
 }
 \newcommand{\nameTest}[1]{%
-  {\large\scshape{#1}}%
+  {\normalsize\scshape{#1}}%
 }
 
 \newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
@@ -90,11 +90,11 @@
     {\href{#2}{#1}}}
 
 \newcommand{\basicInfo}[1]{
-  \centerline{\sffamily\large{#1}}
-  \vspace{1.5ex}
+  \centerline{\sffamily\small{#1}}
+  \vspace{1.0ex}
 }
 
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
-  \vspace{0.85ex}
+  \vspace{0.65ex}
 }
