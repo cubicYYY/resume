@@ -96,5 +96,5 @@
 
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
-  \vspace{0.65ex}
+  \vspace{0.5ex}
 }
